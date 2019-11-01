@@ -1,0 +1,1 @@
+select * from {{ source('hubspot', 'deal_pipelines') }}

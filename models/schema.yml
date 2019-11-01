@@ -1,0 +1,152 @@
+version: 2
+
+sources:
+  - name: jira
+    database: ra-development
+    schema: stitch_jira
+    tables:
+      - name: projects
+        identifier: projects
+        loaded_at_field: _sdc_sequence
+      - name: issues
+        identifier: issues
+        loaded_at_field: _sdc_sequence
+  - name: zapier_events_staging
+    database: ra-development
+    schema: zapier_events_staging
+    tables:
+      - name: events
+        identifier: events
+        loaded_at_field: event_ts
+  - name: looker
+    database: ra-development
+    schema: client_looker_usage_stats
+    tables:
+      - name: all_history
+        identifier: all_history
+        loaded_at_field: History_Completed_Time
+  - name: xero
+    database: ra-development
+    schema: xero
+    tables:
+      - name: contacts
+        identifier: contacts
+        loaded_at_field: _sdc_sequence
+      - name: accounts
+        loaded_at_field: _sdc_sequence
+      - name: bank_transactions
+        loaded_at_field: _sdc_sequence
+  - name: fivetran_mailchimp
+    database: ra-development
+    schema: mailchimp
+    tables:
+      - name: member
+        identifier: member
+        loaded_at_field: _fivetran_synced
+  - name: xero_reports
+    database: ra-development
+    schema: xero_reports
+    tables:
+      - name: profit_and_loss_export
+  - name: hubspot
+    database: ra-development
+    schema: hubspot
+    tables:
+      - name: companies
+
+        loaded_at_field: _sdc_sequence
+      - name: contacts
+
+        loaded_at_field: _sdc_sequence
+      - name: deal_pipelines
+
+        loaded_at_field: _sdc_sequence
+      - name: deals
+
+        loaded_at_field: _sdc_sequence
+      - name: engagements
+
+        loaded_at_field: _sdc_sequence
+      - name: owners
+
+        loaded_at_field: _sdc_sequence
+  - name: harvest_forecast
+    database: ra-development
+    schema: harvest_forecast
+    tables:
+      - name: assignments
+
+        loaded_at_field: _sdc_sequence
+      - name: clients
+
+        loaded_at_field: _sdc_sequence
+      - name: milestones
+
+        loaded_at_field: _sdc_sequence
+      - name: people
+
+        loaded_at_field: _sdc_sequence
+      - name: projects
+
+        loaded_at_field: _sdc_sequence
+  - name: harvest
+    database: ra-development
+    schema: rittman_analytics
+    tables:
+      - name: clients
+
+        loaded_at_field: _sdc_sequence
+      - name: contacts
+
+        loaded_at_field: _sdc_sequence
+      - name: estimate_item_categories
+
+        loaded_at_field: _sdc_sequence
+      - name: expense_categories
+
+        loaded_at_field: _sdc_sequence
+      - name: expenses
+
+        loaded_at_field: _sdc_sequence
+      - name: invoice_item_categories
+
+        loaded_at_field: _sdc_sequence
+      - name: invoice_line_items
+
+        loaded_at_field: _sdc_sequence
+      - name: invoice_payments
+
+        loaded_at_field: _sdc_sequence
+      - name: invoices
+
+        loaded_at_field: _sdc_sequence
+      - name: project_tasks
+
+        loaded_at_field: _sdc_sequence
+      - name: project_users
+
+        loaded_at_field: _sdc_sequence
+      - name: projects
+
+        loaded_at_field: _sdc_sequence
+      - name: roles
+
+        loaded_at_field: _sdc_sequence
+      - name: tasks
+
+        loaded_at_field: _sdc_sequence
+      - name: time_entries
+
+        loaded_at_field: _sdc_sequence
+      - name: user_project_tasks
+
+        loaded_at_field: _sdc_sequence
+      - name: user_projects
+
+        loaded_at_field: _sdc_sequence
+      - name: user_roles
+
+        loaded_at_field: _sdc_sequence
+      - name: users
+
+        loaded_at_field: _sdc_sequence

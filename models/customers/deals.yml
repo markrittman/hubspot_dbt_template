@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: deals
+
+    columns:
+        - name: deal_id
+          description: "Unique identifier of a deal, primary key"
+          tests:
+              - unique
+              - not_null
